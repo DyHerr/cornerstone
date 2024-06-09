@@ -25,9 +25,9 @@
             window.lazySizesConfig.loadMode = 1;
         </script>
         <script async src="{{cdn 'assets/dist/theme-bundle.head_async.js' resourceHint='preload' as='script'}}"></script>
-        
+
         {{getFontsCollection font-display='block'}}
-        
+
         <script async src="{{cdn 'assets/dist/theme-bundle.font.js' resourceHint='preload' as='script'}}"></script>
 
         {{{stylesheet '/assets/css/theme.css'}}}
@@ -50,10 +50,9 @@
     </head>
     <body>
         <svg data-src="{{cdn 'img/icon-sprite.svg'}}" class="icons-svg-sprite"></svg>
-
-        {{> components/common/header }}
+        {{> components/custom/header-custom}}
         {{> components/common/body }}
-        {{> components/common/footer }}
+        {{> components/custom/footer-custom }}
 
         <script>window.__webpack_public_path__ = "{{cdn 'assets/dist/'}}";</script>
         <script>
@@ -62,7 +61,7 @@
                 window.stencilBootstrap("{{page_type}}", {{jsContext}}).load();
 
                 function browserSupportsFormData() {
-                    return typeof FormData !== 'undefined' 
+                    return typeof FormData !== 'undefined'
                         && !!FormData.prototype.keys;
                 }
                 function loadFormDataPolyfillScript(src) {

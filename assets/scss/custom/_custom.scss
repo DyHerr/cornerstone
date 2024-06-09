@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Cline+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap');
+
+body{
+    font-family: 'Cline Sans', sans-serif;
+}
+
+
+.footer {
+    background: #181818;
+}
+
+.footer-info h3 {
+    color: white;
+}
+
+.footer-info a + p {
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-info a:hover {
+    color: #fabf75;
+}
+
+.footer-info .button {
+    color: #fabf75;
+    border: 2px solid #fabf75;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.footer-info .button:hover {
+    color: #181818;
+    background: #fabf75;
+    border: 2px solid #fabf75;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%; 
+    padding: 0 1.5rem;
+    position: relative;
+    width: 100%; 
+}
+
+.productView-details {
+    font-family: 'Jost', sans-serif;
+    color: #181818;
+    padding-top: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .productView-details {
+        font-family: 'Jost', sans-serif;
+        color: #181818;
+        padding-top: 0px;
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .productView-product {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.productView-title{
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 0;
+    margin-top: 0;
+    color: #181818;
+}
+
+.productView-info-value {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.productView-product {
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+}
+
+.productView-img-container {
+    padding-bottom: 0;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.productView-img-container::after {
+    padding-bottom: 0;
+}
+
+.productView-img-container img {
+    position: relative;
+}
+
+
+.form label, small {
+    color: #181818 !important;
+}
+
+.productView-price {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-option-wrapper label {
+    background-color: white;
+    color: #181818;
+    border-radius: 100vmax;
+    transition: all 0.3s ease 0s;
+}
+
+.form-option-wrapper span {
+    color: #181818;
+    transition: all 0.3s ease 0s;
+}
+
+.form-radio:hover + .form-option {
+    border-color: #181818;
+    background-color: #181818;
+    box-shadow: 0 0 0 1px #181818;
+}
+
+.form-radio:hover + .form-option span {
+    color: white;
+}
+
+.form-radio:checked + .form-option {
+    border-color: #181818;
+    background-color: #181818;
+    box-shadow: 0 0 0 1px #181818;
+}
+
+.form-radio:checked + .form-option span {
+    color: white;
+}
+
+
+.socialLinks{
+    display: flex;
+    justify-content: center;
+}
+
+.form-option {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 25px;
+    border-color: #181818;
+    border-radius: 5px;
+    border-width: 1px;
+} 
+
+.form-field {
+    padding-bottom: 25px;
+    border-bottom:  1px solid #181818; 
+}
+
+.add-to-cart-buttons {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    width: 100% !important;
+}
+
+.form-action .button--primary {
+    cursor: pointer;
+    border-radius: 100vmax;
+    font-weight: 500 !important;
+    color: white;
+    background: #181818;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #181818;
+}
+
+.form-action .button--primary:hover {
+    font-weight: 500 !important;
+    color: #181818;
+    background-color: transparent;
+}
+
+.form-wishlist {
+    width: 100%;
+}
+
+.form-wishlist a {
+    width: 100% !important;
+    background-color: #181818 !important;
+    border-color: white;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.form-wishlist a:hover {
+    background-color: white !important;
+    color: #181818;
+}
+
+#wishlist-dropdown {
+    padding-right: 0 !important;
+}
+
+.form-increment input {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #181818;
+    background-color: transparent;
+}
+
+.form-increment button {
+    width: 27px;
+    height: 27px;
+    border-radius: 100vmax;
+    background-color: #181818;
+}
+
+.right-section ul {
+    font-size: 12px;
+    margin: 0;
+}
